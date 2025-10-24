@@ -9,6 +9,8 @@ import time
 import argparse
 from pathlib import Path
 
+from config.settings import CurrentSettings, SystemMode
+
 # Import all components
 from detection.yolo_fastest import YoloFastest
 from tracking.object_tracker import ObjectTracker
@@ -473,9 +475,9 @@ def main():
     if args.pi:
         from config import settings
         settings.Settings.PI_MODE = True
-    
-    # Now, import the settings which will be either Settings or PiSettings
-    from config.settings import CurrentSettings, SystemMode
+        # Reload the settings module to apply the change
+        import importlib
+        importlib.reload(settings)
 
     # Apply arguments to settings
     if args.camera is not None:

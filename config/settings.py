@@ -33,7 +33,7 @@ class Settings:
     MODEL_PARAM_PATH = MODELS_DIR / "yolo-fastest-1.1.param"
     MODEL_BIN_PATH = MODELS_DIR / "yolo-fastest-1.1.bin"
     MODEL_INPUT_SIZE = 320
-    MODEL_CONF_THRESHOLD = 0.4
+    MODEL_CONF_THRESHOLD = 0.7
     MODEL_NUM_THREADS = 4
     MODEL_USE_VULKAN = True  # GPU acceleration
     
