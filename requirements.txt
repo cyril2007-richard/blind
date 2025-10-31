@@ -2,16 +2,11 @@
 numpy
 psutil
 scipy
-
+matplot
 # Audio
 pyttsx3
 
 # Computer Vision
 opencv-python
-
-# NCNN for YOLO model
 # This might need to be installed from a specific wheel or from source
 ncnn
-
-# Optional: Google Text-to-Speech (online)
-# gtts
