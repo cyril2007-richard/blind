@@ -218,8 +218,8 @@ class MetricsTracker:
 
 def main():
     # Initialize detector
-    param_path = "blind-assistance-system/models/yolo-fastest-1.1.param"
-    bin_path = "blind-assistance-system/models/yolo-fastest-1.1.bin"
+    param_path = "models/yolo-fastest-1.1.param"
+    bin_path = "models/yolo-fastest-1.1.bin"
     
     print("Loading YOLO-Fastest model...")
     detector = YoloFastest(param_path, bin_path, target_size=320)
